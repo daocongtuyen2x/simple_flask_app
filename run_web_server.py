@@ -1,6 +1,7 @@
 # import the necessary packages
 from tensorflow.keras.utils import img_to_array
 from keras.applications import imagenet_utils
+import tensorflow as tf
 from PIL import Image
 import numpy as np
 import settings
@@ -28,7 +29,7 @@ def prepare_image(image, target):
 	image = img_to_array(image)
 	image = 1.0/255.0 * image
 	image = np.expand_dims(image, axis=0)
-	image = imagenet_utils.preprocess_input(image)
+	image = tf.convert_to_tensor(image)
 
 	# return the processed image
 	return image
