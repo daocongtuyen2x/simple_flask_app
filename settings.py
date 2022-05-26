@@ -7,7 +7,7 @@ REDIS_DB = 0
 # data type
 IMAGE_WIDTH = 120
 IMAGE_HEIGHT = 120
-IMAGE_CHANS = 3
+IMAGE_CHANS = 1
 IMAGE_DTYPE = "float32"
 
 # initialize constants used for server queuing
