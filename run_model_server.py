@@ -55,7 +55,7 @@ def classify_process():
 			# classify the batch
 			print("* Batch size: {}".format(batch.shape))
 			preds = model.predict(batch)
-			results = imagenet_utils.decode_predictions(preds)
+			results = preds
 
 			# loop over the image IDs and their corresponding set of
 			# results from our model
