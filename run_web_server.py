@@ -23,6 +23,7 @@ def prepare_image(image, target):
 		image = image.convert("RGB")
 
 	# resize the input image and preprocess it
+	image = image.convert('L')
 	image = image.resize(target)
 	image = img_to_array(image)
 	image = 1.0/255.0 * image
