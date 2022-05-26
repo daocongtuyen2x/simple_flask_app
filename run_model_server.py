@@ -64,7 +64,7 @@ def classify_process():
 				output = []
 				# loop over the results and add them to the list of
 				# output predictions
-				resultSet = resultSet.numpy().item()
+				resultSet = resultSet.item()
 
 				r = {"label": resultSet}
 				output.append(r)
