@@ -56,7 +56,7 @@ def predict():
 
 			# ensure our NumPy array is C-contiguous as well,
 			# otherwise we won't be able to serialize it
-			image = image.copy(order="C")
+			#image = image.copy(order="C")
 
 			# generate an ID for the classification then add the
 			# classification ID + image to the queue
